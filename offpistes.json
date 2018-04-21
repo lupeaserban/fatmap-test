@@ -36,7 +36,7 @@
     "location": "Aiguilles Rouges",
     "more_info_url": "",
     "short_description": "A good introduction to Chamonix ski touring which nonetheless features a short bootpack and a slightly exposed traverse.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -313,7 +313,7 @@
     "location": "Petit Mont Blanc",
     "more_info_url": "http://lucazattoni.altervista.org/Luca_Zattoni/News/Voci/2015/3/12_Bonatti.html",
     "short_description": "A steep, wide couloir ",
-    "geo_data": null,
+    "the_geom": null,
     "topology_data": null,
     "lifts": [],
     "tags": [
@@ -414,7 +414,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "A fun mini-adventure through the forest below Plan Roujon, with some steep drop-offs, this is particularly good in powder.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -728,7 +728,7 @@
     "location": "From the top of the Bochard godola of teh Grands Montents, ski 100m SW and gain the fence to the Poubelle Couloir.",
     "more_info_url": "http://alpinepassion.blogspot.no/2015/02/couloir-poubelle-in-chamonix.html",
     "short_description": "One for the poseur! A much-eyed line down a spectacular couloir. Not to be under-estimated",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -1067,7 +1067,7 @@
     "location": "Aiguille du Midi",
     "more_info_url": "",
     "short_description": "D4",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -1320,7 +1320,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "A steep, serious variation leading in to the classic Passerelle couloir.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -1534,7 +1534,7 @@
     "location": null,
     "more_info_url": null,
     "short_description": "A hidden gem; varied and interesting skiing high above the Argentiere Glacier",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -2226,7 +2226,7 @@
     "location": null,
     "more_info_url": null,
     "short_description": "Another classic Grands Montets line, accessing a hidden bowl below steep cliffs",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -2608,7 +2608,7 @@
     "location": null,
     "more_info_url": null,
     "short_description": "Long consistent, but serious couloirs offer amazing skiing.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -4380,7 +4380,7 @@
     "location": null,
     "more_info_url": null,
     "short_description": "An interesting direct line through the moraine wall to the Argentiere Glacier",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -4747,7 +4747,7 @@
     "location": null,
     "more_info_url": null,
     "short_description": "A equally fine variation on the legendary Pas de Chevre. Serious skiing in a spectacular big mountain environment",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -5431,7 +5431,7 @@
     "location": null,
     "more_info_url": null,
     "short_description": "Not often in condition but worth the hike out to this spectacular summit. Classic location for the Freeride World Tour.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -7325,7 +7325,7 @@
     "location": null,
     "more_info_url": null,
     "short_description": "A short hike leads to this serious but incredible run. Steep up high and open in the lower it simply begs you open up full throttle.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -7894,7 +7894,7 @@
     "location": null,
     "more_info_url": null,
     "short_description": "Although shorter than the other Brevent couloirs the Allias offers a wider canvas pefect for opening up.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -8593,7 +8593,7 @@
     "location": null,
     "more_info_url": null,
     "short_description": "A short steep hanging snowfield, approached by a scramble over the Grands Montets summit",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -8765,7 +8765,7 @@
     "location": null,
     "more_info_url": null,
     "short_description": "A nice run slope with sparse trees",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -9076,7 +9076,7 @@
     "location": "Aiguille des Grands montets, Glacier de Grands Montets, in direction of Pas de Chevre, the narrow SW couloir with entrance at 3009 meters on glacier de Grands Montets.",
     "more_info_url": "https://www.camptocamp.org/routes/46616/en/aiguille-des-grands-montets-couloir-rectiligne",
     "short_description": "A steep, narrow couloir in wild high mountain terrain",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -9695,7 +9695,7 @@
     "location": null,
     "more_info_url": null,
     "short_description": "A steep couloir through the forest, narrow in places",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -10457,7 +10457,7 @@
     "location": null,
     "more_info_url": null,
     "short_description": "A real adventure as you traverse and ski fantastic terrain all the way to the valley floor.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -11386,7 +11386,7 @@
     "location": null,
     "more_info_url": null,
     "short_description": "A twisting gully through the trees; often gets very bumpy in the stream-bed",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -11638,7 +11638,7 @@
     "location": null,
     "more_info_url": null,
     "short_description": "A classic Grands Montets line; open, varied, great skiing",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -12677,7 +12677,7 @@
     "location": null,
     "more_info_url": null,
     "short_description": "A good run on wide open slopes",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -12909,7 +12909,7 @@
     "location": null,
     "more_info_url": null,
     "short_description": "A wide open glacier run with a steep exit",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -13211,7 +13211,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "A serious but truly exceptional, long and varied ski descent in breathtaking terrain.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -15226,7 +15226,7 @@
     "location": null,
     "more_info_url": null,
     "short_description": "A narrow hidden bowl at 35 degrees",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -15523,7 +15523,7 @@
     "location": null,
     "more_info_url": null,
     "short_description": "A steep, narrow couloir through the lower forest; rarely skied",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -15805,7 +15805,7 @@
     "location": null,
     "more_info_url": null,
     "short_description": "A wide open glacier run in a small dip below the bounding cliffs",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -16052,7 +16052,7 @@
     "location": null,
     "more_info_url": null,
     "short_description": "An imposing line down the small glacier at the top of the front face of the Grands Montets",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -16521,7 +16521,7 @@
     "location": null,
     "more_info_url": null,
     "short_description": "A serious glacier run in the spectacular Argentiere Glacier basin",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -17423,7 +17423,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": " Maybe the most coveted line in the Chamonix valley representing the pinnacle in steep and committing skiing, all with a perfect view of the town of Chamonix.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -19512,7 +19512,7 @@
     "location": null,
     "more_info_url": null,
     "short_description": "A legendary Chamonix off-piste run. Serious skiing in a spectacular big mountain environment",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -21094,7 +21094,7 @@
     "location": null,
     "more_info_url": null,
     "short_description": "A fun line down a narrow twisting gully",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -21375,7 +21375,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "Long fall-line skiing straight off the lift.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -21624,7 +21624,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "The \"James Bond\" track; hero skiing home after the Vallée Blanche",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -25673,7 +25673,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "A traversing section that links the Envers du Plan to the Grand envers and requin hut couloirs exit. ",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -25862,7 +25862,7 @@
     "location": "-",
     "more_info_url": "",
     "short_description": "-",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -26050,7 +26050,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "EDW's Marbré Descent",
-    "geo_data": null,
+    "the_geom": null,
     "topology_data": null,
     "lifts": [],
     "tags": [],
@@ -26117,7 +26117,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "Probably the most spectacular descent on the Hellbronner, this line goes through some huge terrain and features steep freeriding. ",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -28335,7 +28335,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "A series of gullies offering great skiing with a lot of variety and options, all easily accessed from a lift.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -29220,7 +29220,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "fatmap episode 1",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -29771,7 +29771,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "A hidden pearl under Dent du Géant featuring some wild, exposed skiing and requiring a wide range of ski mountaineering skills.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -30210,7 +30210,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "A highly crevassed variation of the Vallée Blanche which is not often possible due to the state of the glacier.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -30814,7 +30814,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "Serious glaciers but great flowing skiing brings you from Italy in to the classic French Vallée Blanche.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -31198,7 +31198,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "Perhaps the most famous ski descent in the world? Technically moderate but very serious skiing in an absolutely breathtaking setting.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -34749,7 +34749,7 @@
     "location": "Tour Ronde",
     "more_info_url": "",
     "short_description": "extreme",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -35485,7 +35485,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "One for those who like it extreme, this alternative entry to the Dario couloir is both steep and committing.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -35817,7 +35817,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "A short couloir offering an alternative to taking the stairs to the Toula Glacier.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -36066,7 +36066,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "Challenging skiing down the steep scrubby shoulder beneath the Lognan telepherique cables",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -36676,7 +36676,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "A serious but fantastic route with a combination of fast, flowing skiing and some steep narrow sections.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -37510,7 +37510,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "Great, varied but serious skiing offering steep to very steep options in a mostly forested area; this route is great in bad weather but not always in condition and often threatened by avalanches.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -39817,7 +39817,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "Lots of possible lines offering good variations to the main Lavancher bowl lines with many interesting bumps and rolls.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -40107,7 +40107,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "A wide open col leads to a classic off piste jaunt which leads back to the piste.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -40591,7 +40591,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "“THE classic freeride face at Brévent which offers numerous different routes of varying difficulty”.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -42667,7 +42667,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "Another short but steep couloir leading to the Toula Glacier.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -42976,7 +42976,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "Two sustained and serious exit couloirs that offer steep skiing for those in search of an interesting finish to the Grand Envers.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -43733,7 +43733,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "A steep south facing slope is a great finishing option to the classic Vallée Blanche.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -44072,7 +44072,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "A small open bowl between the trees; often bumpy but usually good fun.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -44436,7 +44436,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "Almost never in condition, a short but steep ski through rocks leads to the glacier.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -44670,7 +44670,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "A wild, steep and serious descent for experts only. ",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -45194,7 +45194,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "Moderate angled skiing leads you back to the Vallee Blanche, this line usually holds powder well due to its northerly aspect.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -45543,7 +45543,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "Highly crevassed but good skiing, this is a step up from the Vallée Blanche both technically and in the seriousness of the glacier.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -46237,7 +46237,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "An alternative approach to the lower Canadian Bowl; usually bumps at the top",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -46612,7 +46612,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "Slyly crosses the ridge from the Bochard to find fine slopes on skier's right of the Lavancher bowl",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -46897,7 +46897,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "This narrow, steep and committing couloir offers extreme skiing right off the bridge.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -47356,7 +47356,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "Very steep, serious and extreme skiing, accessible with 3 long rappels.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -47720,7 +47720,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "A great option for skiing to the valley floor after a descent of any of the west or north face routes off of the Aiguille du Midi",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -48419,7 +48419,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "Wild, serious skiing away from the pisted areas in the trees which is often good when visibility is low.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -51178,7 +51178,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "This run offers great off piste skiing in relatively gentle undulating terrain.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -52902,7 +52902,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "A good descent on wide open slopes, but be warned you pay the price with the exit",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -54111,7 +54111,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "A big couloir taking you back to the resort, well worth the extra work needed to hike.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -54410,7 +54410,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "A great alternative to the main bowl lines with fantastic skiing and reliable powder.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -54995,7 +54995,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "A great extension from the Lachenal bowl that leads to the valley floor.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -55434,7 +55434,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "Giving 600 meters of fantastic skiing, this is worth the hike.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -55973,7 +55973,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "Easily accessible, very serious yet excellent steep skiing below the cables on the Helbronner front face.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -57535,7 +57535,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "A great variation on the classic Vallée Blanche offering wide open steeper skiing options.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -58142,7 +58142,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "A mega classic that links steep sustained pitches before finishing in the requin hut exits couloirs. Incredidble but very serious skiing.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -60406,7 +60406,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "A fun excursion a short way from the piste.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -60740,7 +60740,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "A mythical run down a hanging glacier overlooking Chamonix, the steep and serious the first pitch is often icy and has lead to many an accident.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -61799,7 +61799,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "Sustained, serious and steep skiing in a fantastic couloir leading to the Toula Glacier below.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -62193,7 +62193,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "Steep, very serious and sustained skiing leads you to the village of Trient.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -62652,7 +62652,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "Some of the steepest and most serious terrain accessible from a lift anywhere in the world; an undertaking reserved for only the very best skiers.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -63796,7 +63796,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "Great skiing links sections of steeper technical terrain with wide open stretches. Perfect for taking in the view.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -64250,7 +64250,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "An alternative to the main Dome line.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -64405,7 +64405,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "Steep and serious terrain reached easily from the Brevent cable car, in a nutshell what Chamonix steep skiing is about.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -65619,7 +65619,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "Extreme skiing - 900 meters of sustained and serious terrain between 40-50 degrees; enough to get anyones heart pumping.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -70496,7 +70496,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "The \"intro\" to the north face of the Midi with an incredible ambiance and surprisingly \"freerideable\" skiing in the upper section.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -71630,7 +71630,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "A steep variant into the Cesso couloir it is not often in condition but it's good when it is.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -72099,7 +72099,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "A wild setting sets the tone for an incredible descent, steep and committing.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -73198,7 +73198,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "Wide to start with, the Cesso narrows in its lower reaches and is exciting as you ski between her steep rock walls.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -73817,7 +73817,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "Skiing from a wide col with space for a lot of skiers; fresh tracks are almost guaranteed. ",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -74666,7 +74666,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "Good skiing awaits in this classsic couloir which holds snow well until late in the day due to its westerly aspect",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -75095,7 +75095,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "A real treat with easy access, varied terrain and descent options.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -76172,7 +76172,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "A real adventure linking bowls and steep faces all the way to the town of Châtelard.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -77471,7 +77471,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "A series of walking trails makes it possible to ski from the tunnel du Mont Blanc back to chamonix if there is enough snow.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -79480,7 +79480,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "A wide open face offering good skiing far from the crowds.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -80794,7 +80794,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "A serious direct finish to the Rond or Cosmiques couloir this route is great skiing when snow conditions allow.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -83123,7 +83123,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "Steep and serious skiing under the very impressive Brévent cliff face.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -84347,7 +84347,7 @@
     "location": "secret",
     "more_info_url": "",
     "short_description": "secret",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -84747,7 +84747,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "The bowl offers unlimited descent options in flowy terrain.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -85638,7 +85638,7 @@
     "location": "Above the Floria lift",
     "more_info_url": "",
     "short_description": "A Chamonix classic which features a beautiful ascent, an exciting, long abseil and some stunning north facing bowls.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -85984,7 +85984,7 @@
     "location": "",
     "more_info_url": "",
     "short_description": "A moderate and fun line down some serious glaciated terrain on the Italian side of the Vallée Blanche.",
-    "geo_data": {
+    "the_geom": {
       "type": "MultiLineString",
       "coordinates": [
         [
@@ -86531,7 +86531,7 @@
     "location": "Aiguille de l'Aigle",
     "more_info_url": "http://lucazattoni.altervista.org/Luca_Zattoni/News/Voci/2016/3/26_Couloir_Domenech.html",
     "short_description": "A long and steep couloir",
-    "geo_data": null,
+    "the_geom": null,
     "topology_data": null,
     "lifts": [],
     "tags": [

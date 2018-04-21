@@ -1,0 +1,49 @@
+.names{
+font-weight: bold;
+color: blue;
+font-size: 1.2rem;
+}
+
+.desc {
+color: silver;
+}
+
+.dif{
+  color: red;
+  font-size: 1.1rem;
+}
+
+button{
+  margin:5px;
+  float:right;
+  display: inline-block;
+}
+
+h1{
+  display: inline;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  outline-style: none;
+  margin-right: 5px;
+  overflow: visible;
+  position: fixed;
+  width: 55%;
+  height: 100%;
+  border: 0;
+}
+
+
+#features {
+  padding: 1rem;
+  width: 45%;
+  margin-left: 55%;
+  font-family: sans-serif;
+  overflow-y: scroll;
+  background-color: #fafafa;
+}
