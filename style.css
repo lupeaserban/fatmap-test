@@ -1,11 +1,15 @@
 .names{
 font-weight: bold;
-color: blue;
+color: black;
 font-size: 1.2rem;
 }
 
+ul{
+  list-style-type: none;
+}
+
 .desc {
-color: silver;
+color: black;
 }
 
 .dif{
@@ -14,36 +18,33 @@ color: silver;
 }
 
 button{
+  border-radius:1rem;
+  background: rgb(128, 176, 240);
   margin:5px;
   float:right;
   display: inline-block;
 }
 
 h1{
+  font-size: 3rem;
   display: inline;
 }
 
 body {
-  margin: 0;
+
+  margin-top: 40%;
   padding: 0;
 }
 
 #map {
-  outline-style: none;
-  margin-right: 5px;
-  overflow: visible;
+  left: 0;
+  top: 0;
+  bottom: 0;
   position: fixed;
-  width: 55%;
-  height: 100%;
-  border: 0;
+  width: 100%;
+  height: 67%;
 }
 
-
 #features {
-  padding: 1rem;
-  width: 45%;
-  margin-left: 55%;
-  font-family: sans-serif;
-  overflow-y: scroll;
-  background-color: #fafafa;
+
 }
