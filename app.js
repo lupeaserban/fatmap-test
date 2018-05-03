@@ -14,7 +14,8 @@ $(document).ready(function() {
 //mapbox map
 function loadMap() {
   map = new mapboxgl.Map({
-    container: 'map', style: 'mapbox://styles/lupeaserban/cj8m3ik2g6j3r2spkjail3rz5',
+    container: 'map',
+    style: 'mapbox://styles/lupeaserban/cj8m3ik2g6j3r2spkjail3rz5',
     //maxBounds: [[6.7037200927734375, 45.79290335020632],[7.1088409423828125,46.03749263453821]],   [SW, NE]
     center: [
       6.866455078125, 45.90195515801997
@@ -86,8 +87,8 @@ function render() {
 
 }
 
-
-function getCoords() {
+//geojson.features[0].geometry.coordinates.push([x, y]);
+function getCoords () {
   // wait for both map and data before drawing lines
   if (!(map && map.loaded() && offpistes)) {
     return;
