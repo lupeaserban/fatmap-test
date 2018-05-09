@@ -10,16 +10,13 @@ $(document).ready(function() {
   loadMap()
 })
 
-
 //mapbox map
 function loadMap() {
   map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/lupeaserban/cj8m3ik2g6j3r2spkjail3rz5',
+    style: 'mapbox://styles/lupeaserban/cjgyq84te00062rnvjs8ws4ao',
     //maxBounds: [[6.7037200927734375, 45.79290335020632],[7.1088409423828125,46.03749263453821]],   [SW, NE]
-    center: [
-      6.866455078125, 45.90195515801997
-    ],
+    center: [ 6.866455078125, 45.90195515801997 ],
     zoom: 9,
     bearing: 27,
     pitch: 25
@@ -56,17 +53,19 @@ function loadData() {
 function addBtnListeners() {
   for (var i = 0; i < offpistes.length; i++) {
     if (offpistes[i].the_geom !== null) {
-      var btn = document.getElementById("button"+i);
-      console.log(btn);
-      btn.addEventListener('click', function (e) {
+      var btn = document.getElementById("button" + i);
+      btn.addEventListener('click', function(e) {
         var iClicked = parseInt(e.currentTarget.id.substr(6)) // TODO: i in for loop always goes to 102
-        var slope = {} ;
-        slope = map.getSource("offpistes_"+iClicked);
-        console.log(slope._data.geometry.coordinates);
+        var slope = {};
+        slope = map.getSource("offpistes_" + iClicked);
         map.flyTo({
           zoom: 12,
-          center :[slope._data.geometry.coordinates[0][0] , slope._data.geometry.coordinates[0][1]]
+          center: [
+            slope._data.geometry.coordinates[0][0],
+            slope._data.geometry.coordinates[0][1]
+          ]
         });
+        map.setPaintProperty('offpistes_' + iClicked, 'line-color', '#faafee');
       });
     }
   }
@@ -87,13 +86,11 @@ function render() {
 
 }
 
-//geojson.features[0].geometry.coordinates.push([x, y]);
-function getCoords () {
+function getCoords() {
   // wait for both map and data before drawing lines
   if (!(map && map.loaded() && offpistes)) {
     return;
   }
-
   for (var i = 0; i < offpistes.length; i++) {
     if (offpistes[i].the_geom !== null) {
       var coordinates = [];
