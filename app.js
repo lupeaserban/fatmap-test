@@ -1,5 +1,3 @@
-//for this to WORK you MUST start a live server with node.js, in cli, in the folder of website
-var app = this;
 var offpistes = null;
 var map;
 mapboxgl.accessToken = 'pk.eyJ1IjoibHVwZWFzZXJiYW4iLCJhIjoiY2owaGNsMjZyMDJ5eDJxcDVleWE2a3BjdCJ9.fMYQbhKexTYmOygHsUSUEw'
@@ -15,8 +13,9 @@ function loadMap() {
   map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/lupeaserban/cjgyq84te00062rnvjs8ws4ao',
-    maxBounds: [[6.7037200927734375, 45.79290335020632],[7.1088409423828125,46.03749263453821]], //  [SW, NE]
-    center: [ 6.866455078125, 45.90195515801997 ],
+    center: [
+      6.866455078125, 45.90195515801997
+    ],
     zoom: 10,
     bearing: 27,
     pitch: 25
@@ -30,13 +29,11 @@ function loadMap() {
 function render() {
   var output = '';
   for (var i = 0; i < offpistes.length; i++) {
-    if (offpistes[i].the_geom !== null) {
-      output += `<button id="button${i}">`
-      output += '<li class="names">' + offpistes[i].name + '</li>';
-      output += '<li class="dif" type="none">' + 'Difficulty: ' + offpistes[i].ski_difficulty + '</li>';
-      output += '<li class="desc" type="none">' + offpistes[i].short_description + '</li>';
-      output += '</button>'
-    }
+    output += `<button id="button${i}">`
+    output += '<li class="names">' + offpistes[i].name + '</li>';
+    output += '<li class="dif" type="none">' + 'Difficulty: ' + offpistes[i].ski_difficulty + '</li>';
+    output += '<li class="desc" type="none">' + offpistes[i].short_description + '</li>';
+    output += '</button>'
   }
   document.getElementById('list').innerHTML = output;
 }
@@ -44,7 +41,7 @@ function render() {
 function setupUI() {
   var sortButton = document.getElementById('sortButton');
   sortButton.addEventListener("click", function() {
-    app.offpistes = app.offpistes.sort(function(x, y) {
+    offpistes = offpistes.sort(function(x, y) {
       return x.ski_difficulty - y.ski_difficulty
     })
     render()
@@ -57,18 +54,21 @@ function loadData() {
   xhttp.onreadystatechange = function(response) {
     if (this.readyState == 4 && this.status == 200) {
       offpistes = JSON.parse(xhttp.responseText);
+      offpistes = offpistes.filter(function(obj) {
+        return obj.the_geom !== null;
+      });
       offpistes = offpistes.sort(function(a, b) {
-          var nameA = a.name.toUpperCase(); // ignore upper and lowercase
-          var nameB = b.name.toUpperCase(); // ignore upper and lowercase
-            if (nameA < nameB) {
-              return -1;
-            }
-            if (nameA > nameB) {
-              return 1;
-            }
-            // names must be equal
-            return 0;
-        });
+        var nameA = a.name.toUpperCase();
+        var nameB = b.name.toUpperCase();
+        if (nameA < nameB) {
+          return -1;
+        }
+        if (nameA > nameB) {
+          return 1;
+        }
+        // names must be equal
+        return 0;
+      });
       render()
       getCoords()
     }
@@ -80,24 +80,22 @@ function loadData() {
 function addBtnListeners() {
   var prevSlope;
   for (var i = 0; i < offpistes.length; i++) {
-    if (offpistes[i].the_geom !== null) {
-      var btn = document.getElementById("button" + i);
-      btn.addEventListener('click', function(e) {
-        map.setPaintProperty(prevSlope, 'line-color', '#1074d7');
-        var iClicked = parseInt(e.currentTarget.id.substr(6)) // TODO: i in for loop always goes to 102
-        var slope = {};
-        slope = map.getSource("offpistes_" + iClicked);
-        prevSlope = slope.id;
-        map.flyTo({
-          zoom: 13,
-          center: [
-            slope._data.geometry.coordinates[0][0],
-            slope._data.geometry.coordinates[0][1]
-          ]
-        });
-        map.setPaintProperty(slope.id, 'line-color', '#ec1616');
+    var btn = document.getElementById("button" + i);
+    btn.addEventListener('click', function(e) {
+      map.setPaintProperty(prevSlope, 'line-color', '#1074d7');
+      var iClicked = parseInt(e.currentTarget.id.substr(6)) // TODO: 
+      var slope = {};
+      slope = map.getSource("offpistes_" + iClicked);
+      prevSlope = slope.id;
+      map.flyTo({
+        zoom: 13,
+        center: [
+          slope._data.geometry.coordinates[0][0],
+          slope._data.geometry.coordinates[0][1]
+        ]
       });
-    }
+      map.setPaintProperty(slope.id, 'line-color', '#ec1616');
+    });
   }
 }
 
@@ -107,39 +105,37 @@ function getCoords() {
     return;
   }
   for (var i = 0; i < offpistes.length; i++) {
-    if (offpistes[i].the_geom !== null) {
-      var coordinates = [];
-      for (var j = 0; j < offpistes[i].the_geom.coordinates.length; j++) {
-        for (var k = 0; k < offpistes[i].the_geom.coordinates[j].length; k++) {
-          coordinates.push([
-            offpistes[i].the_geom.coordinates[j][k][0],
-            offpistes[i].the_geom.coordinates[j][k][1]
-          ]);
-        }
+    var coordinates = [];
+    for (var j = 0; j < offpistes[i].the_geom.coordinates.length; j++) {
+      for (var k = 0; k < offpistes[i].the_geom.coordinates[j].length; k++) {
+        coordinates.push([
+          offpistes[i].the_geom.coordinates[j][k][0],
+          offpistes[i].the_geom.coordinates[j][k][1]
+        ]);
       }
-      map.addLayer({
-        "id": "offpistes_" + i,
-        "type": "line",
-        "source": {
-          "type": "geojson",
-          "data": {
-            "type": "Feature",
-            "properties": {},
-            "geometry": {
-              "type": "LineString",
-              "coordinates": coordinates
-            }
-          }
-        },
-        "layout": {
-          "line-join": "round",
-          "line-cap": "round"
-        },
-        "paint": {
-          "line-color": "#1074d7",
-          "line-width": 4
-        }
-      });
     }
+    map.addLayer({
+      "id": "offpistes_" + i,
+      "type": "line",
+      "source": {
+        "type": "geojson",
+        "data": {
+          "type": "Feature",
+          "properties": {},
+          "geometry": {
+            "type": "LineString",
+            "coordinates": coordinates
+          }
+        }
+      },
+      "layout": {
+        "line-join": "round",
+        "line-cap": "round"
+      },
+      "paint": {
+        "line-color": "#1074d7",
+        "line-width": 4
+      }
+    });
   }
 }
