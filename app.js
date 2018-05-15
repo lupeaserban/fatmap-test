@@ -4,7 +4,7 @@ var offpistes = null;
 var map;
 mapboxgl.accessToken = 'pk.eyJ1IjoibHVwZWFzZXJiYW4iLCJhIjoiY2owaGNsMjZyMDJ5eDJxcDVleWE2a3BjdCJ9.fMYQbhKexTYmOygHsUSUEw'
 
-$(document).ready(function() {
+document.addEventListener("DOMContentLoaded", function() {
   setupUI()
   loadData()
   loadMap()
@@ -15,9 +15,9 @@ function loadMap() {
   map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/lupeaserban/cjgyq84te00062rnvjs8ws4ao',
-    //maxBounds: [[6.7037200927734375, 45.79290335020632],[7.1088409423828125,46.03749263453821]],   [SW, NE]
+    maxBounds: [[6.7037200927734375, 45.79290335020632],[7.1088409423828125,46.03749263453821]], //  [SW, NE]
     center: [ 6.866455078125, 45.90195515801997 ],
-    zoom: 9,
+    zoom: 10,
     bearing: 27,
     pitch: 25
   });
@@ -25,50 +25,6 @@ function loadMap() {
     getCoords()
     addBtnListeners();
   });
-}
-
-function setupUI() {
-  var sortButton = document.getElementById('sortButton');
-  sortButton.addEventListener("click", function() {
-    app.offpistes = app.offpistes.sort(function(x, y) {
-      return x.ski_difficulty - y.ski_difficulty
-    })
-    render()
-  })
-}
-
-function loadData() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function(response) {
-    if (this.readyState == 4 && this.status == 200) {
-      offpistes = JSON.parse(xhttp.responseText);
-      render()
-      getCoords()
-    }
-  }
-  xhttp.open("GET", "offpistes.json", true);
-  xhttp.send();
-}
-
-function addBtnListeners() {
-  for (var i = 0; i < offpistes.length; i++) {
-    if (offpistes[i].the_geom !== null) {
-      var btn = document.getElementById("button" + i);
-      btn.addEventListener('click', function(e) {
-        var iClicked = parseInt(e.currentTarget.id.substr(6)) // TODO: i in for loop always goes to 102
-        var slope = {};
-        slope = map.getSource("offpistes_" + iClicked);
-        map.flyTo({
-          zoom: 12,
-          center: [
-            slope._data.geometry.coordinates[0][0],
-            slope._data.geometry.coordinates[0][1]
-          ]
-        });
-        map.setPaintProperty('offpistes_' + iClicked, 'line-color', '#faafee');
-      });
-    }
-  }
 }
 
 function render() {
@@ -83,7 +39,66 @@ function render() {
     }
   }
   document.getElementById('list').innerHTML = output;
+}
 
+function setupUI() {
+  var sortButton = document.getElementById('sortButton');
+  sortButton.addEventListener("click", function() {
+    app.offpistes = app.offpistes.sort(function(x, y) {
+      return x.ski_difficulty - y.ski_difficulty
+    })
+    render()
+    addBtnListeners()
+  })
+}
+
+function loadData() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function(response) {
+    if (this.readyState == 4 && this.status == 200) {
+      offpistes = JSON.parse(xhttp.responseText);
+      offpistes = offpistes.sort(function(a, b) {
+          var nameA = a.name.toUpperCase(); // ignore upper and lowercase
+          var nameB = b.name.toUpperCase(); // ignore upper and lowercase
+            if (nameA < nameB) {
+              return -1;
+            }
+            if (nameA > nameB) {
+              return 1;
+            }
+            // names must be equal
+            return 0;
+        });
+      render()
+      getCoords()
+    }
+  }
+  xhttp.open("GET", "offpistes.json", true);
+  xhttp.send();
+}
+
+function addBtnListeners() {
+  var prevSlope;
+  for (var i = 0; i < offpistes.length; i++) {
+    if (offpistes[i].the_geom !== null) {
+      var btn = document.getElementById("button" + i);
+      btn.addEventListener('click', function(e) {
+        map.setPaintProperty(prevSlope, 'line-color', '#1074d7');
+        var iClicked = parseInt(e.currentTarget.id.substr(6)) // TODO: i in for loop always goes to 102
+        var slope = {};
+        slope = map.getSource("offpistes_" + iClicked);
+        prevSlope = slope.id;
+        map.flyTo({
+          zoom: 13,
+          center: [
+            slope._data.geometry.coordinates[0][0],
+            slope._data.geometry.coordinates[0][1]
+          ]
+        });
+        map.setPaintProperty(slope.id, 'line-color', '#ec1616');
+      });
+    }
+  }
 }
 
 function getCoords() {
@@ -121,7 +136,7 @@ function getCoords() {
           "line-cap": "round"
         },
         "paint": {
-          "line-color": "#678",
+          "line-color": "#1074d7",
           "line-width": 4
         }
       });
