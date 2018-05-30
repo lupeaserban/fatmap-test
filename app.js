@@ -77,25 +77,26 @@ function loadData() {
   xhttp.send();
 }
 
+function slope(count) {
+  map.setPaintProperty("offpistes_" + count, 'line-color', '#1074d7');
+  return function() {
+    var slope = {};
+    slope = map.getSource("offpistes_" + count);
+    map.flyTo({
+      zoom: 13,
+      center: [
+        slope._data.geometry.coordinates[0][0],
+        slope._data.geometry.coordinates[0][1]
+      ]
+    });
+    map.setPaintProperty(slope.id, 'line-color', '#ec1616');
+  }
+}
+
 function addBtnListeners() {
-  var prevSlope;
   for (var i = 0; i < offpistes.length; i++) {
     var btn = document.getElementById("button" + i);
-    btn.addEventListener('click', function(e) {
-      map.setPaintProperty(prevSlope, 'line-color', '#1074d7');
-      var iClicked = parseInt(e.currentTarget.id.substr(6)) // TODO: 
-      var slope = {};
-      slope = map.getSource("offpistes_" + iClicked);
-      prevSlope = slope.id;
-      map.flyTo({
-        zoom: 13,
-        center: [
-          slope._data.geometry.coordinates[0][0],
-          slope._data.geometry.coordinates[0][1]
-        ]
-      });
-      map.setPaintProperty(slope.id, 'line-color', '#ec1616');
-    });
+    btn.addEventListener('click', slope(i));
   }
 }
 
